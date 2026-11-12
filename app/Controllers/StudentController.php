@@ -18,11 +18,6 @@ class StudentController extends BaseController
         $this->studentModel = new StudentModel();
     }
 
-    public function index()
-    {
-        return view('student/menu');
-    }
-
     public function menu()
     {
         return view('student/menu');

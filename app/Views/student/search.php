@@ -18,34 +18,7 @@
             </div>
             <button type="submit" class="submit-btn">Search</button>
         </form>
-
-        <?php if (!empty($searchCourse) && !empty($students)): ?>
-            <table>
-                <tr>
-                    <th>Register Number</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>DOB</th>
-                    <th>Contact Number</th>
-                    <th>Email</th>
-                    <th>Course</th>
-                </tr>
-                <?php foreach ($students as $row): ?>
-                <tr>
-                    <td><?= esc($row['id']) ?></td>
-                    <td><?= esc($row['first_name']) ?></td>
-                    <td><?= esc($row['last_name']) ?></td>
-                    <td><?= esc($row['dob']) ?></td>
-                    <td><?= esc($row['phone_no']) ?></td>
-                    <td><?= esc($row['email']) ?></td>
-                    <td><?= esc($row['course']) ?></td>
-                </tr>
-                <?php endforeach; ?>
-            </table>
-        <?php elseif (!empty($searchCourse)): ?>
-            <p style="text-align: center; color: #dc2626; margin-top: 15px;">No students found for this course.</p>
-        <?php endif; ?>
-
+        
         <a href="/student" class="back-link">Back to home page</a>
     </div>
 </body>

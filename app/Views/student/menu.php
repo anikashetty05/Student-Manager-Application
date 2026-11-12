@@ -7,9 +7,6 @@
 <body>
     <div class="menu-card">
         <h2>Student Management: Menu</h2>
-        <?php if (session()->getFlashdata('message')): ?>
-            <p style="color: green;"><?= session()->getFlashdata('message') ?></p>
-        <?php endif; ?>
         <ul>
             <li class="card"><a href="/student/register">Insert Student Record</a></li>            
             <li class="card"><a href="/student/update">Update Details</a></li>

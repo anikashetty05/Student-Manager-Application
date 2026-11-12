@@ -3,7 +3,7 @@
 use CodeIgniter\Router\RouteCollection;
 
 /** @var RouteCollection $routes */
-$routes->get('/', 'Home::menu');
+$routes->get('/', 'Home::index');
 $routes->get('student', 'StudentController::menu');
 $routes->get('student/register', 'StudentController::register');
 $routes->post('student/store', 'StudentController::store');
